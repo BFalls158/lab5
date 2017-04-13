@@ -1,8 +1,8 @@
 // Lab 5
 
-var temp = 100;
+// var temp = 100;
 
-console.log(temp * (5/9) + 32 + " C");
+// console.log(temp * (5/9) + 32 + " C");
 
 
 
@@ -43,27 +43,29 @@ console.log(temp * (5/9) + 32 + " C");
 
 // What should I wear?
 
-// function whatDoIWear (event, temp) {
-// 	var suggestion = "";
-// 	if (event === "casual") {
-// 		suggestion += "something comfy ";
-// 	} else if (event === "semi-formal") {
-// 		suggestion += "a polo ";
-// 	} else {
-// 		suggestion += "a suit ";
-// 	}
+function whatDoIWear (event, temp) {
+	var suggestion = "";
+	if (event === "casual") {
+		suggestion += "something comfy ";
+	} else if (event === "semi-formal") {
+		suggestion += "a polo ";
+	} else {
+		suggestion += "a suit ";
+	}
 
-// 	suggestion += "with "
+	suggestion += "with "
 
-// 	if (temp === "Less than 54 degrees") {
-// 		suggestion += "a coat";
-// 	} else if (temp === "54 - 70 degrees") {
-// 		suggestion += "a jacket";
-// 	} else {
-// 		suggestion += "no jacket";
-// 	}
+	if (temp < 54) {
+		suggestion += "a coat";
+	} else if (temp >= 54 && temp <=70) {
+		suggestion += "a jacket";
+	} else {
+		suggestion += "no jacket";
+	}
 
-// 	return "You are heading to a " + event + " event and should wear " + suggestion + " because it is " + temp + " outside.";
-// }
+	console.log("You are heading to a " + event + " event and should wear " + suggestion + " because it is " + temp + " degrees outside.")
+}
 
-console.log(whatDoIWear("casual", "more than 70 degrees"));
+whatDoIWear("formal", 30);
+whatDoIWear("casual", 50);
+whatDoIWear("semi-casual", 75);
