@@ -27,11 +27,10 @@ console.log(temp * (5/9) + 32 + " C");
 // tempConv(-40, "C");
 
 
-
 //FizzBuzz
 
-// for (var i = 1; i <= 100; i++) {
-//   if (i % 3 === 0 && i % 5 === 0 ){
+// for (var i = 1; i <= 100; i += 1) {
+//   if (i % 3 === 0 && i % 5 === 0 ) {
 //     console.log("FizzBuzz");
 //   } else if (i % 3 === 0) {
 //     console.log("Fizz");
@@ -41,3 +40,30 @@ console.log(temp * (5/9) + 32 + " C");
 //     console.log(i);
 //   }
 // }
+
+// What should I wear?
+
+// function whatDoIWear (event, temp) {
+// 	var suggestion = "";
+// 	if (event === "casual") {
+// 		suggestion += "something comfy ";
+// 	} else if (event === "semi-formal") {
+// 		suggestion += "a polo ";
+// 	} else {
+// 		suggestion += "a suit ";
+// 	}
+
+// 	suggestion += "with "
+
+// 	if (temp === "Less than 54 degrees") {
+// 		suggestion += "a coat";
+// 	} else if (temp === "54 - 70 degrees") {
+// 		suggestion += "a jacket";
+// 	} else {
+// 		suggestion += "no jacket";
+// 	}
+
+// 	return "You are heading to a " + event + " event and should wear " + suggestion + " because it is " + temp + " outside.";
+// }
+
+console.log(whatDoIWear("casual", "more than 70 degrees"));
