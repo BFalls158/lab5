@@ -26,6 +26,14 @@ tempConv(65, "C");
 tempConv(100, "F");
 tempConv(-40, "C");
 
+// Challenge 6: Square
+
+function square(num) {
+	return num * num;
+}
+
+console.log(square(4));
+console.log(square(2) + square(3));
 
 // // FizzBuzz
 
