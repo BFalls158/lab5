@@ -1,8 +1,8 @@
-// Lab 5
+// // Lab 5
 
-var temp = 100;
+// var temp = 100;
 
-console.log(temp * (5/9) + 32 + " C");
+// console.log(temp * (5/9) + 32 + " C");
 
 
 
@@ -27,44 +27,44 @@ tempConv(100, "F");
 tempConv(-40, "C");
 
 
-// FizzBuzz
+// // FizzBuzz
 
-for (var i = 1; i <= 100; i += 1) {
-  if (i % 3 === 0 && i % 5 === 0 ) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else {
-    console.log(i);
-  }
-}
+// for (var i = 1; i <= 100; i += 1) {
+//   if (i % 3 === 0 && i % 5 === 0 ) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
 
-// What should I wear?
+// // What should I wear?
 
-function whatDoIWear (event, temp) {
-	var suggestion = "";
-	if (event === "casual") {
-		suggestion += "something comfy ";
-	} else if (event === "semi-formal") {
-		suggestion += "a polo ";
-	} else if (event === "formal") {
-		suggestion += "a suit ";
-	}
+// function whatDoIWear (event, temp) {
+// 	var suggestion = "";
+// 	if (event === "casual") {
+// 		suggestion += "something comfy ";
+// 	} else if (event === "semi-formal") {
+// 		suggestion += "a polo ";
+// 	} else if (event === "formal") {
+// 		suggestion += "a suit ";
+// 	}
 
-	suggestion += "with "
+// 	suggestion += "with "
 
-	if (temp < 54) {
-		suggestion += "a coat";
-	} else if (temp >= 54 && temp <=70) {
-		suggestion += "a jacket";
-	} else if (temp > 70 ) {
-		suggestion += "no jacket";
-	}
-	console.log("You are heading to a " + event + " event and should wear " + suggestion + " because it is " + temp + " degrees outside.")
-}
+// 	if (temp < 54) {
+// 		suggestion += "a coat";
+// 	} else if (temp >= 54 && temp <=70) {
+// 		suggestion += "a jacket";
+// 	} else if (temp > 70 ) {
+// 		suggestion += "no jacket";
+// 	}
+// 	console.log("You are heading to a " + event + " event and should wear " + suggestion + " because it is " + temp + " degrees outside.")
+// }
 
-whatDoIWear("formal", 30);
-whatDoIWear("casual", 50);
-whatDoIWear("semi-formal", 75);
+// whatDoIWear("formal", 30);
+// whatDoIWear("casual", 50);
+// whatDoIWear("semi-formal", 75);
